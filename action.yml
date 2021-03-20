@@ -1,0 +1,19 @@
+name: 'Skip or debug jobs'
+description: 'Dynamicly generates matrix for job based on commit message or
+              workflow_dispatch inputs'
+inputs:
+  github-token:
+    required: true
+    description: 'workflow github token'
+  job_id:
+    description: 'Job for which matrix generated'
+    required: true
+  job_matrix:
+    description: 'Base matrix for job'
+    required: true
+  debugging_jobs:
+    description: 'Comma separated list of debugging jobs'
+    required: false
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

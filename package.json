@@ -1,0 +1,25 @@
+{
+  "name": "skip_or_debug_jobs",
+  "version": "1.0.0",
+  "description": "Github action that adds possibility to skip or debug jobs based on commit message or based on workflow_dispatch inputs.",
+  "main": "lib/main.js",
+  "scripts": {
+    "build": "tsc",
+    "package": "ncc build --source-map --license licenses.txt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/homper/skip_or_debug_jobs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/homper/skip_or_debug_jobs/issues"
+  },
+  "homepage": "https://github.com/homper/skip_or_debug_jobs#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0"
+  }
+}
